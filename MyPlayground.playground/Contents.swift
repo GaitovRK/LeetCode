@@ -62,3 +62,35 @@ import UIKit
 //    ints /= 10
 //}
 //reversed
+
+
+var string = "III"
+var array = Array(string)
+var result = 0
+for n in 0..<array.count {
+    if array[n] == "I" {
+        result += 1
+    }
+    
+    if array[n] == "I" {
+        result += 1
+
+    }
+    if array[n] == "I" {
+        result += 1
+
+    }
+    if array[n] == "I" {
+        result += 1
+
+    }
+    if array[n] == "I" {
+        result += 1
+
+    }
+    if array[n] == "I" {
+        result += 1
+
+    }
+}
+array
