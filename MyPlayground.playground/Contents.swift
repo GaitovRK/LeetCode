@@ -52,22 +52,13 @@ import UIKit
 
 
 
-class Solution {
-    func isPalindrome(_ x: Int) -> Bool {
-        var string = String(x)
-        var reversed = ""
-        var n = string.count
-        
-        for char in string {
-            if char != string[] {
-                return false
-            }
-            n -= 1
-        }
-        return true
-    }
-}
 
-var solution = Solution()
-solution.isPalindrome(112)
 
+//var ints = 123
+//var reversed = 0
+//while ints != 0 {
+//    var digit = ints % 10
+//    reversed = reversed * 10 + digit
+//    ints /= 10
+//}
+//reversed
