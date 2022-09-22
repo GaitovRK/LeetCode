@@ -62,35 +62,47 @@ import UIKit
 //    ints /= 10
 //}
 //reversed
+//
+//
+//var string = "III"
+//var array = Array(string)
+//var result = 0
+//for n in 0..<array.count {
+//    if array[n] == "I" {
+//        result += 1
+//    }
+//
+//    if array[n] == "I" {
+//        result += 1
+//
+//    }
+//    if array[n] == "I" {
+//        result += 1
+//
+//    }
+//    if array[n] == "I" {
+//        result += 1
+//
+//    }
+//    if array[n] == "I" {
+//        result += 1
+//
+//    }
+//    if array[n] == "I" {
+//        result += 1
+//
+//    }
+//}
+//print(result)
 
 
-var string = "III"
-var array = Array(string)
-var result = 0
-for n in 0..<array.count {
-    if array[n] == "I" {
-        result += 1
-    }
-    
-    if array[n] == "I" {
-        result += 1
-
-    }
-    if array[n] == "I" {
-        result += 1
-
-    }
-    if array[n] == "I" {
-        result += 1
-
-    }
-    if array[n] == "I" {
-        result += 1
-
-    }
-    if array[n] == "I" {
-        result += 1
-
-    }
-}
-array
+//// MARK: Problem 1480
+//var nums = [1, 1, 1]
+//var sum = 0
+//        var answer = [Int]()
+//        
+//        for n in 0..<nums.count {
+//            sum += nums[n]
+//            answer.append(sum)
+//        }
+//answer
