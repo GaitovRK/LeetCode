@@ -96,13 +96,37 @@ import UIKit
 //print(result)
 
 
-//// MARK: Problem 1480
+// MARK: Problem 1480
 //var nums = [1, 1, 1]
 //var sum = 0
 //        var answer = [Int]()
-//        
+//
 //        for n in 0..<nums.count {
 //            sum += nums[n]
 //            answer.append(sum)
 //        }
 //answer
+
+
+
+// MARK: Problem 990
+
+//let nums = [1,7,3,6,5,6]
+//
+//var left = 0
+//        var right = 0
+//
+//for n in 1..<nums.count {
+//            right += nums[n]
+//        }
+//
+//        for i in 1..<(nums.count-1) {
+//            left += nums[i-1]
+//            right -= nums[i]
+//            print(left, " + ", right)
+//
+//            if left == right {
+//                print(i)
+//            }
+//        }
+//        print(-1)
