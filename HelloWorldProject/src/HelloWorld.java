@@ -1,17 +1,51 @@
+import java.util.Arrays;
+import java.util.Iterator;
+
+class Solution {
+    public boolean isSubsequence(String s, String t) {
+    	
+    	char[] sChar = s.toCharArray();
+    	char[] tChar = t.toCharArray();
+    	char[] subArray = new char[s.length()];
+    	int m = 0;
+    	    
+    	for (int i = 0; i < tChar.length; i++) {
+    		for ( ; m < sChar.length; m++) {
+    			if (tChar[i] == sChar[m]) {
+    				subArray[m] = tChar[i];
+    				i = m;
+    			}
+    			
+
+    		}
+		}
+    	
+    	System.out.println(Arrays.equals(subArray, sChar));
+		System.out.println(sChar);
+		System.out.println(subArray);
+    	
+//		String sString = String.valueOf(sChar);
+//		String subString = String.valueOf(subArray);
+
+//		System.out.println(sString);
+//		System.out.println(subString);
+		
+		
+//    	if (sString.equals(subString)) {
+//    		return true;
+//    	} else {
+//    		return false;
+//		}
+		return true;
+        
+    }
+}
 
 
-public class HelloWorld {
+class HelloWorld {
 	public static void main(String[] args) {
-		System.out.println("Hello, World, I love you!");
-		
-		int firstVariable = 25;
-		int secondVariable = 35;		
-		double division = (double)(firstVariable) / (double)(secondVariable);
-		
-		
-		System.out.println(Short.MIN_VALUE);
-		System.out.println(Short.MAX_VALUE);
-
-		
+		Solution aSolution = new Solution();
+		boolean asnwer = aSolution.isSubsequence("abc", "abdcf");
+		System.out.print(asnwer);
 	}
 }
