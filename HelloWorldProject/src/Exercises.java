@@ -50,18 +50,47 @@ public class Exercises {
 		
 		// Exercise 5: Math Exam
 		
-		int number1 = (int) (Math.random() * 100);
-		int number2 = (int) (Math.random() * 100);
-		int sum = number1 + number2;
+//		int number1 = (int) (Math.random() * 100);
+//		int number2 = (int) (Math.random() * 100);
+//		int sum = number1 + number2;
+//
+//		System.out.println("What is the sum of " + number1 + " and " + number2 + "?");
+//		Scanner answerScanner = new Scanner(System.in);
+//		int answer = answerScanner.nextInt();
+//		
+//		if (answer == sum) 
+//			System.out.println("You are correct!");
+//		else 
+//			System.out.println("You are wrong! The correct answer is " + sum);
 
-		System.out.println("What is the sum of " + number1 + " and " + number2 + "?");
-		Scanner answerScanner = new Scanner(System.in);
-		int answer = answerScanner.nextInt();
 		
-		if (answer == sum) 
-			System.out.println("You are correct!");
+		// Exercise 6: BMI
+		
+		// inputs
+		System.out.println("Enter your height in cm and weight in kg: ");
+		Scanner bmiScanner = new Scanner(System.in);
+		int height = bmiScanner.nextInt();
+		int weight = bmiScanner.nextInt();
+		
+		// bmi calculation
+		double bmi = weight / Math.pow((height / 100.0), 2);
+		
+		System.out.println("Your BMI is: " + bmi);
+		
+		if (bmi < 18.5) 
+			System.out.println("You are underweight");
+		else if (bmi < 25.0) 
+			System.out.println("You are normal");
+		else if (bmi < 30.0) 
+			System.out.println("You are overweight");
 		else 
-			System.out.println("You are wrong! The correct answer is " + sum);
+			System.out.println("You are obese");
+		
+		// Exercise 7:
+		// Exercise 8:
+		// Exercise 9:
+		// Exercise 10:
+		// Exercise 11:
 
 	}
 }
