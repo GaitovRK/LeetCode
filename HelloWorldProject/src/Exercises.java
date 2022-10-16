@@ -10,7 +10,7 @@ public class Exercises {
 		// Exercise 1: Compute the area of a circle
 		
 //		double area;
-//		double pi = 3.1415;
+//		final double PI = 3.1415;
 //		int radius = 7;
 //		
 //		area = pi * radius * radius;
@@ -19,12 +19,24 @@ public class Exercises {
 		
 		// Exercise 2: Area with the use of Scanner
 		
+//		Scanner input = new Scanner(System.in);
+//		
+//		System.out.println("Enter radius: ");
+//		double radius = input.nextDouble();
+//		double area = radius * radius * 3.14;
+//		
+//		System.out.println("The area is " + area);
+		
+		
+		// Exercise 3: Displaying Time
+		
 		Scanner input = new Scanner(System.in);
+		System.out.println("Enter an integer number for seconds: ");
 		
-		System.out.println("Enter radius: ");
-		double radius = input.nextDouble();
-		double area = radius * radius * 3.14;
+		int timeInSeconds = input.nextInt();
+		int timeInMinutes = timeInSeconds / 60;
 		
-		System.out.println("The area is " + area);
+		System.out.println(timeInSeconds + " seconds is " + timeInMinutes + " minutes and " + (timeInSeconds % 60) + " seconds");
+		
 	}
 }
