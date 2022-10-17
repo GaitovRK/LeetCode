@@ -89,18 +89,43 @@ public class Exercises {
 		
 		// Exercise 7: Leap Year Calculation
 		
-		System.out.println("Enter the year: ");
-		Scanner yearScanner = new Scanner(System.in);
-		int year = yearScanner.nextInt();
+//		System.out.println("Enter the year: ");
+//		Scanner yearScanner = new Scanner(System.in);
+//		int year = yearScanner.nextInt();
+//		
+//		if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+//			System.out.println("The year " + year + " is a Leap Year!");
+//		} else {
+//			System.out.println("The year " + year + " is NOT a Leap Year!");
+//		}
+//		
+
 		
-		if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-			System.out.println("The year " + year + " is a Leap Year!");
-		} else {
-			System.out.println("The year " + year + " is NOT a Leap Year!");
+		// Exercise 8: Switch statement
+		
+		int month = 2;
+		
+		switch (month) {
+		case 1: {
+			System.out.println("January!");
+			break;
+		}
+		case 2: {
+			System.out.println("February!");
+			break;
+		}
+		case 3: {
+			System.out.println("March!");
+			break;
+		}
+		case 4: {
+			System.out.println("April!");
+			break;
+		}
+		default:
+			System.out.println("I don't know this month :(");
 		}
 		
-		
-		// Exercise 8:
 		// Exercise 9:
 		// Exercise 10:
 		// Exercise 11:
