@@ -103,30 +103,41 @@ public class Exercises {
 		
 		// Exercise 8: Switch statement
 		
-		int month = 2;
+//		int month = 2;
+//		
+//		switch (month) {
+//		case 1: {
+//			System.out.println("January!");
+//			break;
+//		}
+//		case 2: {
+//			System.out.println("February!");
+//			break;
+//		}
+//		case 3: {
+//			System.out.println("March!");
+//			break;
+//		}
+//		case 4: {
+//			System.out.println("April!");
+//			break;
+//		}
+//		default:
+//			System.out.println("I don't know this month :(");
+//		}
 		
-		switch (month) {
-		case 1: {
-			System.out.println("January!");
-			break;
-		}
-		case 2: {
-			System.out.println("February!");
-			break;
-		}
-		case 3: {
-			System.out.println("March!");
-			break;
-		}
-		case 4: {
-			System.out.println("April!");
-			break;
-		}
-		default:
-			System.out.println("I don't know this month :(");
-		}
 		
-		// Exercise 9:
+		// Exercise 9: Multiplication table
+		
+		int number1 = 0;
+		int number2 = 0;
+		
+		for (int x = 1; x < 10; x++) {
+			for (int y = 1; y < 10; y++) {
+				System.out.println("The multiplication of " + x + " and " + y + " is " + x*y);
+			}
+			
+		}
 		// Exercise 10:
 		// Exercise 11:
 
