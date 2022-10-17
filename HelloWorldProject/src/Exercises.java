@@ -67,26 +67,39 @@ public class Exercises {
 		// Exercise 6: BMI
 		
 		// inputs
-		System.out.println("Enter your height in cm and weight in kg: ");
-		Scanner bmiScanner = new Scanner(System.in);
-		int height = bmiScanner.nextInt();
-		int weight = bmiScanner.nextInt();
+//		System.out.println("Enter your height in cm and weight in kg: ");
+//		Scanner bmiScanner = new Scanner(System.in);
+//		int height = bmiScanner.nextInt();
+//		int weight = bmiScanner.nextInt();
+//		
+//		// bmi calculation
+//		double bmi = weight / Math.pow((height / 100.0), 2);
+//		
+//		System.out.println("Your BMI is: " + bmi);
+//		
+//		if (bmi < 18.5) 
+//			System.out.println("You are underweight");
+//		else if (bmi < 25.0) 
+//			System.out.println("You are normal");
+//		else if (bmi < 30.0) 
+//			System.out.println("You are overweight");
+//		else 
+//			System.out.println("You are obese");
 		
-		// bmi calculation
-		double bmi = weight / Math.pow((height / 100.0), 2);
 		
-		System.out.println("Your BMI is: " + bmi);
+		// Exercise 7: Leap Year Calculation
 		
-		if (bmi < 18.5) 
-			System.out.println("You are underweight");
-		else if (bmi < 25.0) 
-			System.out.println("You are normal");
-		else if (bmi < 30.0) 
-			System.out.println("You are overweight");
-		else 
-			System.out.println("You are obese");
+		System.out.println("Enter the year: ");
+		Scanner yearScanner = new Scanner(System.in);
+		int year = yearScanner.nextInt();
 		
-		// Exercise 7:
+		if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+			System.out.println("The year " + year + " is a Leap Year!");
+		} else {
+			System.out.println("The year " + year + " is NOT a Leap Year!");
+		}
+		
+		
 		// Exercise 8:
 		// Exercise 9:
 		// Exercise 10:
