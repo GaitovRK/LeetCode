@@ -272,12 +272,16 @@ public class Exercises {
 
 		// Exercise 16: Convert String to int/long
 		
-		String s1 = "05431335801";
-		long phoneNumber = Long.parseLong(s1);
-		System.out.println(phoneNumber);
+//		String s1 = "05431335801";
+//		long phoneNumber = Long.parseLong(s1);
+//		System.out.println(phoneNumber);
 		
 		
+		// Exercise 17: Format output
 		
+		int count = 13;
+		double precision = 0.013;
+		System.out.printf("count is %d and precision is %f", count, precision);
 		
 	}
 }
