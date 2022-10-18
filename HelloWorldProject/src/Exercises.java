@@ -220,20 +220,30 @@ public class Exercises {
 		
 		// Exercise 13: Working with Strings
 		
-		System.out.print("Enter the string: ");
-		Scanner input = new Scanner(System.in);
-		String s1 = input.nextLine();
-		String s2 = " - is your string";
-		
-		System.out.println(s1 + s2 + "\n" + 
-		"The first letter is " + s1.charAt(0) + "\n" +
-		"The length of the string is " + s1.length() + "\n" +
-		"The concat is " + s1.concat(s2));	
-		
+//		System.out.print("Enter the string: ");
+//		Scanner input = new Scanner(System.in);
+//		String s1 = input.nextLine();
+//		String s2 = " - is your string";
+//		
+//		System.out.println(s1 + s2 + "\n" + 
+//		"The first letter is " + s1.charAt(0) + "\n" +
+//		"The length of the string is " + s1.length() + "\n" +
+//		"The concat is " + s1.concat(s2) + "\n" + 
+//		"The Upper message is " + s1.toUpperCase() + "\n" + 
+//		"The lower message is " + s1.toLowerCase());	
+//		
 		
 		// Exercise 14: Working with char
+		
+		System.out.print("Enter the string: ");
+		Scanner input = new Scanner(System.in);
+		String s1 = input.next();
+		char firstChar = s1.charAt(0);
+		char lastChar = s1.charAt(s1.length() - 1);
+		
+		System.out.println("The first char is " + firstChar + 
+				"\nThe last char is " + lastChar);
 
-//		System.out.print("Enter the char: ");
 
 	}
 }
