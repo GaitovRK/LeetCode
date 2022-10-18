@@ -142,6 +142,26 @@ public class Exercises {
 		
 		// Exercise 10: The greatest common divisor
 		
+		Scanner inpuScanner = new Scanner(System.in);
+		int answer = 0;
+		
+		System.out.println("Enter first integer: ");
+		int firstNumber = inpuScanner.nextInt();
+		
+		System.out.println("Enter second integer: ");
+		int secondNumber = inpuScanner.nextInt();
+		
+
+		
+		for (int i = firstNumber; i  > 0; i --) {
+			if (firstNumber % i == 0 && secondNumber % i == 0) {
+				answer = i;
+				break;
+			}
+		}
+		
+		System.out.println("The greatest common divisor of " + firstNumber + " and " + secondNumber + " is " + answer);
+		
 		
 		// Exercise 11:
 
