@@ -175,29 +175,29 @@ public class Exercises {
 		
 		//Exercise 12: Compute angles of a triangle
 		
-		Scanner inpuScanner = new Scanner(System.in);
-		double angleA = 0;
-		double angleB = 0;
-		double angleC = 0;
-		double sideA = 0;
-		double sideB = 0;
-		double sideC = 0;
-		
-		System.out.println("Enter first corner X-coordinate: ");
-		double firstX = inpuScanner.nextDouble();
-		System.out.println("Enter first corner Y-coordinate: ");
-		double firstY = inpuScanner.nextDouble();
-
-		System.out.println("Enter second corner X-coordinate: ");
-		double secondX = inpuScanner.nextDouble();
-		System.out.println("Enter second corner Y-coordinate: ");
-		double secondY = inpuScanner.nextDouble();
-		
-		System.out.println("Enter third corner X-coordinate: ");
-		double thirdX = inpuScanner.nextDouble();
-		System.out.println("Enter third corner Y-coordinate: ");
-		double thirdY = inpuScanner.nextDouble();
-		
+//		Scanner inpuScanner = new Scanner(System.in);
+//		double angleA = 0;
+//		double angleB = 0;
+//		double angleC = 0;
+//		double sideA = 0;
+//		double sideB = 0;
+//		double sideC = 0;
+//		
+//		System.out.println("Enter first corner X-coordinate: ");
+//		double firstX = inpuScanner.nextDouble();
+//		System.out.println("Enter first corner Y-coordinate: ");
+//		double firstY = inpuScanner.nextDouble();
+//
+//		System.out.println("Enter second corner X-coordinate: ");
+//		double secondX = inpuScanner.nextDouble();
+//		System.out.println("Enter second corner Y-coordinate: ");
+//		double secondY = inpuScanner.nextDouble();
+//		
+//		System.out.println("Enter third corner X-coordinate: ");
+//		double thirdX = inpuScanner.nextDouble();
+//		System.out.println("Enter third corner Y-coordinate: ");
+//		double thirdY = inpuScanner.nextDouble();
+//		
 		// angle A = acos((a * a - b * b - c * c) / (-2 * b * c))
 		// angle B = acos((b * b - a * a - c * c) / (-2 * a * c))
 		// angle C = acos((c * c - b * b - a * a) / (-2 * a * b))
@@ -218,6 +218,22 @@ public class Exercises {
 //		Math.round(angleC * 100) / 100.0);
 
 		
+		// Exercise 13: Working with Strings
 		
+		System.out.print("Enter the string: ");
+		Scanner input = new Scanner(System.in);
+		String s1 = input.nextLine();
+		String s2 = " - is your string";
+		
+		System.out.println(s1 + s2 + "\n" + 
+		"The first letter is " + s1.charAt(0) + "\n" +
+		"The length of the string is " + s1.length() + "\n" +
+		"The concat is " + s1.concat(s2));	
+		
+		
+		// Exercise 14: Working with char
+
+//		System.out.print("Enter the char: ");
+
 	}
 }
