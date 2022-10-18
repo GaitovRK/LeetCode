@@ -247,28 +247,37 @@ public class Exercises {
 
 		// Exercise 15: Advanced String commands
 		
-		String s1 = "13a990013A";
-		String s2 = "13a";
-		
-		System.out.println(s1.compareTo(s2));
-		System.out.println(s1.startsWith(s2));
-		System.out.println(s1.endsWith(s2));
-		
-		// Print substring starting from 3rd char
-		System.out.println(s1.substring(3));
-		
-		// Find index of letter a in s1 String
-		System.out.println(s1.indexOf('a'));
-		
-		// Find index of number in the second half of s1 String
-		System.out.println(s1.indexOf('1', s1.length()/2));
-		
-		// Find index of number in the end of s1 String
-		System.out.println(s1.lastIndexOf('1'));
-		
-		// Combination
-		System.out.println(s1.substring(s1.indexOf("0013")));
+//		String s1 = "13a990013A";
+//		String s2 = "13a";
+//		
+//		System.out.println(s1.compareTo(s2));
+//		System.out.println(s1.startsWith(s2));
+//		System.out.println(s1.endsWith(s2));
+//		
+//		// Print substring starting from 3rd char
+//		System.out.println(s1.substring(3));
+//		
+//		// Find index of letter a in s1 String
+//		System.out.println(s1.indexOf('a'));
+//		
+//		// Find index of number in the second half of s1 String
+//		System.out.println(s1.indexOf('1', s1.length()/2));
+//		
+//		// Find index of number in the end of s1 String
+//		System.out.println(s1.lastIndexOf('1'));
+//		
+//		// Combination
+//		System.out.println(s1.substring(s1.indexOf("0013")));
 
 
+		// Exercise 16: Convert String to int/long
+		
+		String s1 = "05431335801";
+		long phoneNumber = Long.parseLong(s1);
+		System.out.println(phoneNumber);
+		
+		
+		
+		
 	}
 }
