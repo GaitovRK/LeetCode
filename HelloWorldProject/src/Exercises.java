@@ -235,14 +235,39 @@ public class Exercises {
 		
 		// Exercise 14: Working with char
 		
-		System.out.print("Enter the string: ");
-		Scanner input = new Scanner(System.in);
-		String s1 = input.next();
-		char firstChar = s1.charAt(0);
-		char lastChar = s1.charAt(s1.length() - 1);
+//		System.out.print("Enter the string: ");
+//		Scanner input = new Scanner(System.in);
+//		String s1 = input.next();
+//		char firstChar = s1.charAt(0);
+//		char lastChar = s1.charAt(s1.length() - 1);
+//		
+//		System.out.println("The first char is " + firstChar + 
+//				"\nThe last char is " + lastChar);
+
+
+		// Exercise 15: Advanced String commands
 		
-		System.out.println("The first char is " + firstChar + 
-				"\nThe last char is " + lastChar);
+		String s1 = "13a990013A";
+		String s2 = "13a";
+		
+		System.out.println(s1.compareTo(s2));
+		System.out.println(s1.startsWith(s2));
+		System.out.println(s1.endsWith(s2));
+		
+		// Print substring starting from 3rd char
+		System.out.println(s1.substring(3));
+		
+		// Find index of letter a in s1 String
+		System.out.println(s1.indexOf('a'));
+		
+		// Find index of number in the second half of s1 String
+		System.out.println(s1.indexOf('1', s1.length()/2));
+		
+		// Find index of number in the end of s1 String
+		System.out.println(s1.lastIndexOf('1'));
+		
+		// Combination
+		System.out.println(s1.substring(s1.indexOf("0013")));
 
 
 	}
