@@ -129,16 +129,20 @@ public class Exercises {
 		
 		// Exercise 9: Multiplication table
 		
-		int number1 = 0;
-		int number2 = 0;
+//		int number1 = 0;
+//		int number2 = 0;
+//		
+//		for (int x = 1; x < 10; x++) {
+//			for (int y = 1; y < 10; y++) {
+//				System.out.println("The multiplication of " + x + " and " + y + " is " + x*y);
+//			}
+//			
+//		}
 		
-		for (int x = 1; x < 10; x++) {
-			for (int y = 1; y < 10; y++) {
-				System.out.println("The multiplication of " + x + " and " + y + " is " + x*y);
-			}
-			
-		}
-		// Exercise 10:
+		
+		// Exercise 10: The greatest common divisor
+		
+		
 		// Exercise 11:
 
 	}
