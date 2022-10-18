@@ -163,14 +163,61 @@ public class Exercises {
 //		System.out.println("The greatest common divisor of " + firstNumber + " and " + secondNumber + " is " + answer);
 		
 		
-		// Exercise 11:
+		// Exercise 11: Print all even numbers
 		
-		for (int i = 0; i < 100; i++) {
-			if (i % 2 != 0) {
-				continue;
-			}
-			System.out.println(i);
-		}
+//		for (int i = 0; i < 100; i++) {
+//			if (i % 2 != 0) {
+//				continue;
+//			}
+//			System.out.println(i);
+//		}
+//		
+		
+		//Exercise 12: Compute angles of a triangle
+		
+		Scanner inpuScanner = new Scanner(System.in);
+		double angleA = 0;
+		double angleB = 0;
+		double angleC = 0;
+		double sideA = 0;
+		double sideB = 0;
+		double sideC = 0;
+		
+		System.out.println("Enter first corner X-coordinate: ");
+		double firstX = inpuScanner.nextDouble();
+		System.out.println("Enter first corner Y-coordinate: ");
+		double firstY = inpuScanner.nextDouble();
 
+		System.out.println("Enter second corner X-coordinate: ");
+		double secondX = inpuScanner.nextDouble();
+		System.out.println("Enter second corner Y-coordinate: ");
+		double secondY = inpuScanner.nextDouble();
+		
+		System.out.println("Enter third corner X-coordinate: ");
+		double thirdX = inpuScanner.nextDouble();
+		System.out.println("Enter third corner Y-coordinate: ");
+		double thirdY = inpuScanner.nextDouble();
+		
+		// angle A = acos((a * a - b * b - c * c) / (-2 * b * c))
+		// angle B = acos((b * b - a * a - c * c) / (-2 * a * c))
+		// angle C = acos((c * c - b * b - a * a) / (-2 * a * b))
+		
+		
+//		sideA = Math.sqrt((secondX - firstX) * (secondX - firstX) + (secondY - firstY) * (secondY - firstY));
+//		sideB = Math.sqrt((secondX - thirdX) * (secondX - thirdX) + (secondY - thirdY) * (secondY - thirdY));
+//		sideC = Math.sqrt((thirdX - firstX) * (thirdX - firstX) + (thirdY - firstY) * (thirdY - firstY));
+//
+//		angleA = Math.toDegrees(Math.acos((sideA * sideA - sideB * sideB - sideC * sideC) / (-2 * sideB * sideC)));
+//		angleB = Math.toDegrees(Math.acos((sideB * sideB - sideA * sideA - sideC * sideC) / (-2 * sideA * sideC)));
+//		angleC = Math.toDegrees(Math.acos((sideC * sideC - sideB * sideB - sideA * sideA) / (-2 * sideA * sideB)));
+//
+//		
+//		System.out.println("The angles A, B and C are: " + 
+//		Math.round(angleA * 100) / 100.0 + "\t" + 
+//		Math.round(angleB * 100) / 100.0 + "\t" + 
+//		Math.round(angleC * 100) / 100.0);
+
+		
+		
 	}
 }
