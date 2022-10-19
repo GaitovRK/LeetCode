@@ -4,6 +4,7 @@
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
@@ -337,6 +338,52 @@ public class Exercises {
 //        
 //        System.out.println(Arrays.toString(result));
 //        System.out.println(nums);
+
+		
+//		int nums[] = {1,2,3,4};
+//		int sum = 0;
+//        int i = 1;
+//
+//        while (i < nums.length) {
+//            nums[i] += nums[i-1];
+//            i++;
+//        }
+//        
+//        return nums;
+		
+		
+		// Exercise 19: LeetCode 724
+		
+//		int nums[] = {1,7,3,6,5,6};
+//		int index = 0;
+//		int leftSum = 0;
+//		int rightSum = 0;
+//		
+//		for (int i = 0; i < nums.length; i++) {
+//			leftSum += nums[i];
+//		}
+//		
+//		if (leftSum == 0) {
+//			return nums.length;
+//		} else {
+//			leftSum = 0;
+//		}
+//		
+//		for (int i = 0; i < nums.length; i++) {
+//			leftSum += nums[i];
+//
+//			for (int j = i+1; j < nums.length; j++) {
+//				rightSum += nums[j];
+//			}
+//			
+//			if (leftSum == rightSum) {
+//				return i;
+//			} else {
+//				leftSum = 0;
+//				rightSum = 0;
+//			}
+//		}
+
 
         
 	}
