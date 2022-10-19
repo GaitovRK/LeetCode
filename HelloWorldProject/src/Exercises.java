@@ -2,6 +2,8 @@
 // Date: 16.10.2022
 // SWE 501.01 Course
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -279,9 +281,35 @@ public class Exercises {
 		
 		// Exercise 17: Format output
 		
-		int count = 13;
-		double precision = 0.013;
-		System.out.printf("count is %d and precision is %f", count, precision);
+//		int count = 13;
+//		double precision = 0.013;
+//		System.out.printf("count is %d and precision is %f", count, precision);
+		
+		
+		// Exercise 18: Two Sum (LeetCode)
+		
+		
+//		public int[] twoSum(int[] nums, int target) {
+//	        Map<Integer, Integer> numbersMap = new HashMap<Integer, Integer>();
+//			
+//			for (int i = 0; i < nums.length; i++) {
+//				int delta = target - nums[i];
+//				
+//				if (numbersMap.containsKey(delta)) {
+//					return new int[] {numbersMap.get(delta), i};
+//				}
+//				
+//				numbersMap.put(nums[i], i);
+//			}
+//	        
+//	        return new int[] {-1, -1};
+//	    
+//	    }
+		
+		
+		
+		
+		
 		
 	}
 }
