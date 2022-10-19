@@ -2,6 +2,7 @@
 // Date: 16.10.2022
 // SWE 501.01 Course
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -308,8 +309,35 @@ public class Exercises {
 		
 		
 		
+		// Exercise 18: HashMap
+		
+//		Map<String, Long> employeeNumbersMap = new HashMap<>();
+//		
+//		employeeNumbersMap.put("Rashid", 5431335801L);
+//		employeeNumbersMap.put("Ansar", 990L);
+//		employeeNumbersMap.put("Unknown", 5143L);
+//		
+//		
+//		System.out.println(employeeNumbersMap);
+//		
+//		System.out.println(employeeNumbersMap.get("Ansar"));
+
 		
 		
+		// Exercise 19: LeetCode 1480
 		
+//		int nums[] = {1,2,3,4};
+//		int[] result = new int[nums.length];
+//		int sum = 0;
+//
+//        for (int i = 0; i < nums.length; i++) {
+//			sum += nums[i];
+//			result[i] = sum;
+//		}
+//        
+//        System.out.println(Arrays.toString(result));
+//        System.out.println(nums);
+
+        
 	}
 }
