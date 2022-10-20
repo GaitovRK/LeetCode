@@ -4,6 +4,7 @@
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Random;
@@ -385,6 +386,47 @@ public class Exercises {
 //		}
 
 
+		
+		//Exercise 20: LeetCode 205
+		
+//		class Solution {
+//		    public boolean isIsomorphic(String s, String t) {
+		
+//			String s = "badc";
+//			String t = "baba";
+//		
+//			Map<Character, Character> mapS = new HashMap<>();
+//		
+//			char a;
+//			char b;
+//			
+//			for (int i = 0, j = 0; i < s.length(); i++, j++) {
+//				
+//				a = s.charAt(i);
+//				b = t.charAt(j);
+//				
+//				if (mapS.containsKey(a)) {
+//					if (mapS.get(a).equals(b)) {
+//						continue;
+//					} else {
+//						System.out.println(false);
+//					}
+//				}
+//				
+//				if (!mapS.containsValue(a)) {
+//					mapS.put(a, b);
+//				} else {
+//					System.out.println(false);
+//				}
+//				
+//			}
+//			
+//			System.out.println(true);
+//			System.out.println(mapS);		    
+//		}
+		
+		
+		
         
 	}
 }
