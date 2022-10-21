@@ -443,28 +443,45 @@ public class Exercises {
 		
 		//Exercise 21: LeetCode 121
 
-		int[] prices = {7,1,12,5,29,0,1};
+//		int[] prices = {7,1,12,5,29,0,1};
+//		
+//		int cheapest = prices[0];
+//		int topProfit = 0;
+//		int todayProfit = 0;
+//		
+//		for (int i = 0; i < prices.length; i++) {
+//			
+//			if (cheapest > prices[i]) {
+//				cheapest = prices[i];
+//			}
+//			
+//			todayProfit = prices[i] - cheapest;
+//			
+//			if (todayProfit > topProfit) {
+//				topProfit = todayProfit;
+//			}
+//			
+//		}
+//		
+//
+//		System.out.println(topProfit);
+
 		
-		int cheapest = prices[0];
-		int topProfit = 0;
-		int todayProfit = 0;
+		//Exercise 21: LeetCode 121
+
+		int[] myList = new int[10];
+		boolean[] arr1 = new boolean[10];
 		
-		for (int i = 0; i < prices.length; i++) {
-			
-			if (cheapest > prices[i]) {
-				cheapest = prices[i];
-			}
-			
-			todayProfit = prices[i] - cheapest;
-			
-			if (todayProfit > topProfit) {
-				topProfit = todayProfit;
-			}
-			
+		System.out.println(myList[5]);
+		System.out.println(arr1[5]);
+
+		
+		Scanner inputScanner = new Scanner(System.in);
+		
+		for (int i = 0; i < arr1.length; i++) {
+			myList[i] = inputScanner.nextInt();
 		}
 		
-
-		System.out.println(topProfit);
-
+		System.out.println(Arrays.toString(myList));
 	}
 }
