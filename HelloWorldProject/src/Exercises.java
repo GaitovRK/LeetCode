@@ -10,6 +10,8 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 
+import javax.xml.transform.Source;
+
 public class Exercises {
 	public static void main(String[] args) {
 	
@@ -426,7 +428,43 @@ public class Exercises {
 //		}
 		
 		
+		//Exercise 21: LeetCode 392
+//		String s = "b";
+//		String t = "abc";
+//		int j = 0;
+//		
+//		for (int i = 0; i < t.length() && j < s.length(); i++) {
+//			if (t.charAt(i) == s.charAt(j)) {
+//				j++;
+//			}
+//		}				
+//		System.out.println(s.length() == j);
 		
-        
+		
+		//Exercise 21: LeetCode 121
+
+		int[] prices = {7,1,12,5,29,0,1};
+		
+		int cheapest = prices[0];
+		int topProfit = 0;
+		int todayProfit = 0;
+		
+		for (int i = 0; i < prices.length; i++) {
+			
+			if (cheapest > prices[i]) {
+				cheapest = prices[i];
+			}
+			
+			todayProfit = prices[i] - cheapest;
+			
+			if (todayProfit > topProfit) {
+				topProfit = todayProfit;
+			}
+			
+		}
+		
+
+		System.out.println(topProfit);
+
 	}
 }
