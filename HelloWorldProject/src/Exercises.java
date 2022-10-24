@@ -469,19 +469,19 @@ public class Exercises {
 		
 		//Exercise 21: LeetCode 121
 
-		int[] myList = new int[10];
-		boolean[] arr1 = new boolean[10];
-		
-		System.out.println(myList[5]);
-		System.out.println(arr1[5]);
-
-		
-		Scanner inputScanner = new Scanner(System.in);
-		
-		for (int i = 0; i < arr1.length; i++) {
-			myList[i] = inputScanner.nextInt();
-		}
-		
-		System.out.println(Arrays.toString(myList));
+//		int[] myList = new int[10];
+//		boolean[] arr1 = new boolean[10];
+//		
+//		System.out.println(myList[5]);
+//		System.out.println(arr1[5]);
+//
+//		
+//		Scanner inputScanner = new Scanner(System.in);
+//		
+//		for (int i = 0; i < arr1.length; i++) {
+//			myList[i] = inputScanner.nextInt();
+//		}
+//		
+//		System.out.println(Arrays.toString(myList));
 	}
 }
