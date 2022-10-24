@@ -483,5 +483,10 @@ public class Exercises {
 //		}
 //		
 //		System.out.println(Arrays.toString(myList));
+		
+		
+		// Java Course problem 7.24 (Hard)
+		
+		
 	}
 }
