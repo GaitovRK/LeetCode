@@ -487,6 +487,20 @@ public class Exercises {
 		
 		// Java Course problem 7.24 (Hard)
 		
+		boolean[] lockers = new boolean[100];
 		
+		for (int j = 1; j < lockers.length; j++) {
+			
+			for (int i = j; i < lockers.length; i += j) {
+				if (lockers[i] == false) {
+					lockers[i] = true;
+				} else {
+					lockers[i] = false;
+				}
+			}
+			
+		}
+		
+		System.out.println(Arrays.toString(lockers));
 	}
 }
