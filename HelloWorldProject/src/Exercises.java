@@ -507,46 +507,75 @@ public class Exercises {
 		// Java Course problem 7.31 (Hard)		
 		// Merge two sorted lists
 		
-		Scanner inputScanner = new Scanner(System.in);
+//		Scanner inputScanner = new Scanner(System.in);
+//		
+//		System.out.println("Enter array1");
+//		
+//		int arrayLength1 = inputScanner.nextInt();
+//		int[] array1 = new int[arrayLength1];
+//		
+//		for (int i = 0; i < array1.length; i++) {
+//			array1[i] = inputScanner.nextInt();
+//		}
+//		
+//		System.out.println("Enter array2");
+//
+//		int arrayLength2 = inputScanner.nextInt();
+//		int[] array2 = new int[arrayLength2];
+//		
+//		for (int i = 0; i < array2.length; i++) {
+//			array2[i] = inputScanner.nextInt();
+//		}
+//		
+//		merge(array1, array2);
 		
-		System.out.println("Enter array1");
 		
-		int arrayLength1 = inputScanner.nextInt();
-		int[] array1 = new int[arrayLength1];
 		
-		for (int i = 0; i < array1.length; i++) {
-			array1[i] = inputScanner.nextInt();
-		}
+		// Sorting Array: Selection sort
 		
-		System.out.println("Enter array2");
+//		final int[] array = {2, 9, 5, 4, 8, 1, 6};
+//		
+//		for (int i = 0, min, index; i < array.length - 1; i++) {
+//			min = array[i];
+//			index = i;
+//
+//			// Find the minimum in the list
+//			for (int j = i; j < array.length; j++) {
+//				if (min > array[j]) {
+//					min = array[j];
+//					index = j;
+//				}
+//			}
+//			
+//			// Swap current with the minimum
+//			array[index] = array[i];
+//			array[i] = min;
+//		}
+//		
+//		System.out.println("The sorted array is: " + Arrays.toString(array));
 
-		int arrayLength2 = inputScanner.nextInt();
-		int[] array2 = new int[arrayLength2];
-		
-		for (int i = 0; i < array2.length; i++) {
-			array2[i] = inputScanner.nextInt();
-		}
-		
-		merge(array1, array2);
 	}
 	
 	// Java Course problem 7.31 (Hard)		
 	// Merge two sorted lists
 	
-	public static int[] merge(int[] list1, int[] list2) {
-		
-		int[] array = new int[list1.length + list2.length];
-				
-		for (int i = 0; i < list1.length; i++) {
-			array[i] = list1[i];
-		}
-		
-		for (int i = 0; i < list2.length; i++) {
-			array[i + list1.length] = list2[i];
-		}
-		
-		Arrays.sort(array);
-		System.out.println(Arrays.toString(array));
-		return array;
-	}
+//	public static int[] merge(int[] list1, int[] list2) {
+//		
+//		int[] array = new int[list1.length + list2.length];
+//				
+//		for (int i = 0; i < list1.length; i++) {
+//			array[i] = list1[i];
+//		}
+//		
+//		for (int i = 0; i < list2.length; i++) {
+//			array[i + list1.length] = list2[i];
+//		}
+//		
+//		Arrays.sort(array);
+//		System.out.println(Arrays.toString(array));
+//		return array;
+//	}
+	
+	
+	
 }
