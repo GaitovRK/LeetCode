@@ -554,6 +554,26 @@ public class Exercises {
 //		
 //		System.out.println("The sorted array is: " + Arrays.toString(array));
 
+		
+		// Binary search
+		
+		final int[] array = {1, 2, 3, 5, 7, 12, 16, 19, 120};
+		
+		int searchedNumber = 120;
+		int low = 0;
+		int high = array.length;
+		int middleIndex = high / 2;
+		
+		while (high > low) {
+			middleIndex = (low + high) / 2;
+			if (array[middleIndex] > searchedNumber) 
+				high = middleIndex - 1;
+			else 
+				low = middleIndex + 1;
+		}
+		
+		System.out.println("The number's index is " + middleIndex);
+
 	}
 	
 	// Java Course problem 7.31 (Hard)		
