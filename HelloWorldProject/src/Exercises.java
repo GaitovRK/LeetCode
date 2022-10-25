@@ -557,23 +557,30 @@ public class Exercises {
 		
 		// Binary search
 		
-		final int[] array = {1, 2, 3, 5, 7, 12, 16, 19, 120};
-		
-		int searchedNumber = 120;
-		int low = 0;
-		int high = array.length;
-		int middleIndex = high / 2;
-		
-		while (high > low) {
-			middleIndex = (low + high) / 2;
-			if (array[middleIndex] > searchedNumber) 
-				high = middleIndex - 1;
-			else 
-				low = middleIndex + 1;
-		}
-		
-		System.out.println("The number's index is " + middleIndex);
+//		final int[] array = {1, 2, 3, 5, 7, 12, 16, 19, 120};
+//		
+//		int searchedNumber = 1;
+//		int low = 0;
+//		int high = array.length;
+//		int middleIndex = high / 2;
+//		
+//		while (high > low) {
+//			middleIndex = (low + high) / 2;
+//			if (array[middleIndex] > searchedNumber) 
+//				high = middleIndex - 1;
+//			else 
+//				low = middleIndex + 1;
+//		}
+//		
+//		System.out.println("The number's index is " + middleIndex);
 
+		
+		// Reverse Array Method
+		
+		int[] array = {1, 2, 3, 4, 5, 6};
+		reverseArray(array);
+		
+		
 	}
 	
 	// Java Course problem 7.31 (Hard)		
@@ -597,5 +604,17 @@ public class Exercises {
 //	}
 	
 	
+	// Reverse Array Method
+	
+	public static int[] reverseArray(int[] array) {
+		
+		int[] newArray = new int[array.length];
+		
+		for (int i = 0, j = array.length - 1; i < array.length; i++, j--) {
+			newArray[i] = array[j];
+		}
+		System.out.println(Arrays.toString(newArray));
+		return newArray;
+	}
 	
 }
