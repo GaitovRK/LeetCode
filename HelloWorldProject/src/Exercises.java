@@ -577,9 +577,42 @@ public class Exercises {
 		
 		// Reverse Array Method
 		
-		int[] array = {1, 2, 3, 4, 5, 6};
-		reverseArray(array);
+//		int[] array = {1, 2, 3, 4, 5, 6};
+//		reverseArray(array);
 		
+		
+		// Game: Hangman
+		
+		String[] words = {"program", "money", "hobby"};
+		
+		int randomIndex = (int) (Math.random() * words.length);
+		final String randomWord = words[randomIndex];
+		int correctLetters = 0;
+		char guess;
+		
+		char[] randomWordArray = randomWord.toCharArray();
+		char[] resultArray = new char[randomWordArray.length];
+		
+		Arrays.fill(resultArray, '*');
+		
+		Scanner inputScanner = new Scanner(System.in);
+		
+		
+		while (!(Arrays.equals(randomWordArray, resultArray))) {
+			System.out.println("Enter the character: ");
+			guess = inputScanner.next().charAt(0);
+			
+			for (int j = 0; j < randomWordArray.length; j++) {
+				if (guess == randomWordArray[j]) {
+					resultArray[j] = guess;
+				}
+			}
+			System.out.println("Guess the word: " + Arrays.toString(resultArray));
+		}
+		
+		System.out.println("You Won!");
+		
+
 		
 	}
 	
@@ -606,15 +639,15 @@ public class Exercises {
 	
 	// Reverse Array Method
 	
-	public static int[] reverseArray(int[] array) {
-		
-		int[] newArray = new int[array.length];
-		
-		for (int i = 0, j = array.length - 1; i < array.length; i++, j--) {
-			newArray[i] = array[j];
-		}
-		System.out.println(Arrays.toString(newArray));
-		return newArray;
-	}
+//	public static int[] reverseArray(int[] array) {
+//		
+//		int[] newArray = new int[array.length];
+//		
+//		for (int i = 0, j = array.length - 1; i < array.length; i++, j--) {
+//			newArray[i] = array[j];
+//		}
+//		System.out.println(Arrays.toString(newArray));
+//		return newArray;
+//	}
 	
 }
