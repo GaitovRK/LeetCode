@@ -583,37 +583,79 @@ public class Exercises {
 		
 		// Game: Hangman
 		
-		String[] words = {"program", "money", "hobby"};
-		
-		int randomIndex = (int) (Math.random() * words.length);
-		final String randomWord = words[randomIndex];
-		int correctLetters = 0;
-		char guess;
-		
-		char[] randomWordArray = randomWord.toCharArray();
-		char[] resultArray = new char[randomWordArray.length];
-		
-		Arrays.fill(resultArray, '*');
-		
-		Scanner inputScanner = new Scanner(System.in);
-		
-		
-		while (!(Arrays.equals(randomWordArray, resultArray))) {
-			System.out.println("Enter the character: ");
-			guess = inputScanner.next().charAt(0);
-			
-			for (int j = 0; j < randomWordArray.length; j++) {
-				if (guess == randomWordArray[j]) {
-					resultArray[j] = guess;
-				}
-			}
-			System.out.println("Guess the word: " + Arrays.toString(resultArray));
-		}
-		
-		System.out.println("You Won!");
+//		String[] words = {"program", "money", "hobby"};
+//		
+//		int randomIndex = (int) (Math.random() * words.length);
+//		final String randomWord = words[randomIndex];
+//		int correctLetters = 0;
+//		char guess;
+//		
+//		char[] randomWordArray = randomWord.toCharArray();
+//		char[] resultArray = new char[randomWordArray.length];
+//		
+//		Arrays.fill(resultArray, '*');
+//		
+//		Scanner inputScanner = new Scanner(System.in);
+//		
+//		
+//		while (!(Arrays.equals(randomWordArray, resultArray))) {
+//			System.out.println("Enter the character: ");
+//			guess = inputScanner.next().charAt(0);
+//			
+//			for (int j = 0; j < randomWordArray.length; j++) {
+//				if (guess == randomWordArray[j]) {
+//					resultArray[j] = guess;
+//				}
+//			}
+//			System.out.println("Guess the word: " + Arrays.toString(resultArray));
+//		}
+//		
+//		System.out.println("You Won!");
 		
 
+		// 2-d Arrays example
 		
+		// City names
+		String[] cityNames = {"A","B","C","D","E","F","G","H"};
+		
+		
+		// City coordinates
+		double[][] coordinates = {
+				{-1.0,3.0},
+				{-1.0,-1.0},
+				{1.0,1.0},
+				{3.0,3.0},
+				{4.0,2.0},
+				{2.0,0.5},
+				{2.0,-1.0},
+				{4.0,-0.5}
+				};
+		
+		double distance = 0.0;
+		
+		double min = Math.sqrt(Math.pow((coordinates[0][0] - coordinates[1][0]), 2) + Math.pow((coordinates[0][1] - coordinates[1][1]), 2));
+		System.out.println("The min is " + min);
+
+		int minX = 0;
+		int minY = 0;
+		
+		for (int i = 0; i < coordinates.length - 1; i++) {
+			for (int j = i + 1; j < coordinates.length; j++) {
+				distance = Math.sqrt(Math.pow((coordinates[i][0] - coordinates[j][0]), 2) + Math.pow((coordinates[i][1] - coordinates[j][1]), 2));
+				
+				if (min > distance) {
+					min = distance;
+					minX = i;
+					minY = j;
+				}
+				
+				System.out.println("The min is " + min);
+			}
+		}
+		
+		System.out.println(min);
+		System.out.println(minX + " " + minY);
+
 	}
 	
 	// Java Course problem 7.31 (Hard)		
