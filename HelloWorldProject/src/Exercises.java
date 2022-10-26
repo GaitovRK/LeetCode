@@ -616,45 +616,45 @@ public class Exercises {
 		// 2-d Arrays example
 		
 		// City names
-		String[] cityNames = {"A","B","C","D","E","F","G","H"};
-		
-		
-		// City coordinates
-		double[][] coordinates = {
-				{-1.0,3.0},
-				{-1.0,-1.0},
-				{1.0,1.0},
-				{3.0,3.0},
-				{4.0,2.0},
-				{2.0,0.5},
-				{2.0,-1.0},
-				{4.0,-0.5}
-				};
-		
-		double distance = 0.0;
-		
-		double min = Math.sqrt(Math.pow((coordinates[0][0] - coordinates[1][0]), 2) + Math.pow((coordinates[0][1] - coordinates[1][1]), 2));
-		System.out.println("The min is " + min);
-
-		int minX = 0;
-		int minY = 0;
-		
-		for (int i = 0; i < coordinates.length - 1; i++) {
-			for (int j = i + 1; j < coordinates.length; j++) {
-				distance = Math.sqrt(Math.pow((coordinates[i][0] - coordinates[j][0]), 2) + Math.pow((coordinates[i][1] - coordinates[j][1]), 2));
-				
-				if (min > distance) {
-					min = distance;
-					minX = i;
-					minY = j;
-				}
-				
-				System.out.println("The min is " + min);
-			}
-		}
-		
-		System.out.println(min);
-		System.out.println(minX + " " + minY);
+//		String[] cityNames = {"A","B","C","D","E","F","G","H"};
+//		
+//		
+//		// City coordinates
+//		double[][] coordinates = {
+//				{-1.0,3.0},
+//				{-1.0,-1.0},
+//				{1.0,1.0},
+//				{3.0,3.0},
+//				{4.0,2.0},
+//				{2.0,0.5},
+//				{2.0,-1.0},
+//				{4.0,-0.5}
+//				};
+//		
+//		double distance = 0.0;
+//		
+//		double min = Math.sqrt(Math.pow((coordinates[0][0] - coordinates[1][0]), 2) + Math.pow((coordinates[0][1] - coordinates[1][1]), 2));
+//		System.out.println("The min is " + min);
+//
+//		int minX = 0;
+//		int minY = 0;
+//		
+//		for (int i = 0; i < coordinates.length - 1; i++) {
+//			for (int j = i + 1; j < coordinates.length; j++) {
+//				distance = Math.sqrt(Math.pow((coordinates[i][0] - coordinates[j][0]), 2) + Math.pow((coordinates[i][1] - coordinates[j][1]), 2));
+//				
+//				if (min > distance) {
+//					min = distance;
+//					minX = i;
+//					minY = j;
+//				}
+//				
+//				System.out.println("The min is " + min);
+//			}
+//		}
+//		
+//		System.out.println(min);
+//		System.out.println(minX + " " + minY);
 
 	}
 	
