@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
@@ -655,7 +656,37 @@ public class Exercises {
 //		
 //		System.out.println(min);
 //		System.out.println(minX + " " + minY);
-
+		
+		
+		
+		// LeetCode 409: palindrome
+		
+//		final String s = "aaabbc";
+//		
+//		HashMap<Character, Integer> countMap = new HashMap<>();
+//		
+//		char[] sArray = s.toCharArray();
+//		int result = 0;
+//		
+//		for (int i = 0; i < sArray.length; i++) {
+//			if (countMap.containsKey(sArray[i])) {
+//				countMap.put(sArray[i], countMap.get(sArray[i]) + 1);
+//			} else {
+//				countMap.put(sArray[i], 1);
+//			}
+//		}
+//		
+//		for (Map.Entry<Character, Integer> entry : countMap.entrySet()) {
+//			if (entry.getValue() > 1) {
+//				if (entry.getValue() % 2 == 0) {
+//					result += entry.getValue();
+//				} else {
+//					result += entry.getValue() - 1;
+//				}
+//			}
+//		}
+//		
+//		System.out.println(result);
 	}
 	
 	// Java Course problem 7.31 (Hard)		
@@ -693,3 +724,4 @@ public class Exercises {
 //	}
 	
 }
+
