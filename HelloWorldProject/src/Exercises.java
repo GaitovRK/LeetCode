@@ -687,6 +687,60 @@ public class Exercises {
 //		}
 //		
 //		System.out.println(result);
+		
+		
+		// Switch Statement
+		
+//		String name = "AbCdE";
+//		
+//		switch (name.toLowerCase()) {
+//		case "abcde": case "abcDe": 
+//			System.out.println("Good");
+//			
+//		
+//		default:
+//			throw new IllegalArgumentException("Unexpected value: " + name);
+//		}
+		
+		
+		//Do-while Loop
+		
+//		int number = 13;
+//		
+//		do {
+//			number++;
+//			System.out.println(number);
+//		} while (number < 50);
+		
+		
+		// Methods
+		
+//		int[] nums = {-1,0,3,5,9,12};
+//		int target = 9;
+//		
+//		int min = 0;
+//        int max = nums.length - 1;
+//        int mid = nums.length / 2;
+
+
+//        while (nums[min] < nums[max]) {
+//            if (nums[mid] > target) {
+//                max = mid;
+//            } else if (nums[mid] == target) {
+//                System.out.println(mid);
+//            } else {
+//                min = mid;
+//            }
+//            mid = (max + min) / 2;
+//        }
+//
+
+		// LeetCode 977: Algorithms
+		
+		int[] nums = {-4,-1,0,3,10};
+		
+		
+		
 	}
 	
 	// Java Course problem 7.31 (Hard)		
@@ -723,5 +777,18 @@ public class Exercises {
 //		return newArray;
 //	}
 	
+	
+	
+	
+	
 }
+
+
+//class ListNode {
+//	  int val;
+//	  ListNode next;
+//	  ListNode() {}
+//	  ListNode(int val) { this.val = val; }
+//	  ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+//}
 
