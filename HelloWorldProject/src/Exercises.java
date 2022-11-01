@@ -737,9 +737,22 @@ public class Exercises {
 
 		// LeetCode 977: Algorithms
 		
-		int[] nums = {-4,-1,0,3,10};
-		
-		
+//		int[] nums = {-4,-1,0,3,10};
+//		
+//		int[] output = new int[nums.length];
+//        int k = nums.length - 1;
+//
+//        for (int i = 0, j = k; i <= j; k--) {
+//			
+//            if (Math.abs(nums[i]) > Math.abs(nums[j])) {
+//                output[k] = nums[i] * nums[i];
+//                i++;
+//            } else {
+//                output[k] = nums[j] * nums[j];
+//                j--;
+//            }
+//		}
+//        return output;
 		
 	}
 	
