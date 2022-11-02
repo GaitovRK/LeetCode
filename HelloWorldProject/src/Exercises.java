@@ -754,7 +754,28 @@ public class Exercises {
 //		}
 //        return output;
 		
+		// LeetCode 283
 		
+//		int counter = 0;
+//
+//        for (int i = 0; i < nums.length; i++) {
+//            
+//            if (counter > 0) {
+//                nums[i - counter] = nums[i];
+//            }
+//            
+//            if (nums[i] == 0) {
+//                counter++;
+//            }
+//
+//            
+//        }
+//
+//        if (counter > 0 && nums.length > 1) {
+//            for (int i = nums.length - counter; i < nums.length; i++) {
+//            nums[i] = 0;
+//            }
+//        }
 		
 	}
 	
