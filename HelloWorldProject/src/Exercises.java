@@ -785,6 +785,17 @@ public class Exercises {
 //            s[s.length - 1 - i] = temp;
 //        }
 		
+		
+		// LeetCode 557
+		
+		String s = "Let's take LeetCode contest";
+		
+		String[] array = s.split(" ");
+		
+		for (String element : array) {
+			System.out.println(element);
+		}
+		
 	}
 	
 	// Java Course problem 7.31 (Hard)		
