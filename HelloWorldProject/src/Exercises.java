@@ -777,6 +777,14 @@ public class Exercises {
 //            }
 //        }
 		
+		
+		// LeetCode 344
+//		for (int i = 0; i < s.length / 2; i++) {
+//            char temp = s[i];
+//            s[i] = s[s.length - 1 - i];
+//            s[s.length - 1 - i] = temp;
+//        }
+		
 	}
 	
 	// Java Course problem 7.31 (Hard)		
