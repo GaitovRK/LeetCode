@@ -788,13 +788,27 @@ public class Exercises {
 		
 		// LeetCode 557
 		
-		String s = "Let's take LeetCode contest";
-		
-		String[] array = s.split(" ");
-		
-		for (String element : array) {
-			System.out.println(element);
-		}
+//		public String reverseWords(String s) {
+//	        String[] array = s.split(" ");
+//
+//	        for (int i = 0; i < array.length; i++) {
+//	            array[i] = reverse(array[i]);
+//	        }
+//
+//	        return String.join(" ", array);
+//	    }
+//
+//	    public String reverse(String s) {
+//	        char[] array = s.toCharArray();
+//
+//	        for (int i = 0; i < array.length / 2; i++) {
+//	            char temp = array[i];
+//	            array[i] = array[array.length - 1 - i];
+//	            array[array.length - 1 - i] = temp;
+//	        }
+//
+//	        return new String(array);
+//	    }
 		
 	}
 	
