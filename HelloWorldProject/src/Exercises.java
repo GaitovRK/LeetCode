@@ -901,7 +901,23 @@ public class Exercises {
 //		}
 		
 		
+		// Example 7.18 Bubble Sort
 		
+		int[] array = {5, 3, 4, 2, 5, 5, 10, 20, 3};
+		int temp;
+		for (int i = array.length; i > 0; i--) {
+			
+			for (int j = 0; j < i - 1; j++) {
+				if (array[j] > array[j + 1]) {
+					temp = array[j];
+					array[j] = array[j + 1];
+					array[j + 1] = temp;
+				}
+			}
+			
+		}
+		
+		System.out.println(Arrays.toString(array));
 		
 	}
 	
