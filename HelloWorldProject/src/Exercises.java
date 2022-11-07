@@ -810,6 +810,99 @@ public class Exercises {
 //	        return new String(array);
 //	    }
 		
+		
+		// Example 7.28
+		
+//		int[] array = new int[4];
+//		Scanner inputScanner = new Scanner(System.in);
+//		
+//		System.out.println("Enter four numbers: ");
+//		for (int i = 0; i < array.length; i++) {
+//			array[i] = inputScanner.nextInt();
+//		}
+//		
+//		for (int i = 0; i < array.length; i++) {
+//			for (int j = 0; j < array.length; j++) {
+//				for (int k = 0; k < array.length; k++) {
+//					for (int l = 0; l < array.length; l++) {
+//						
+//						if (i != j && i != k && i != l && j!=k && l != j && k != l)
+//							System.out.println(array[i] + ", " + array[j] + ", " + array[k] + ", " + array[l]);
+//					}
+//				}
+//			}
+//		}
+		
+		
+		// Example 6.4 Reverse an int
+		
+//		int number = 12345;
+//		
+//		int answer = 0;
+//		
+//		while (number > 0) {
+//			answer = answer * 10 + (number % 10);
+//			number /= 10;
+//		}
+//
+//		System.out.println(answer);
+
+		
+		// Example 6.10 PrimeCount
+//		int primeCount = 0;
+//		
+//		for (int i = 0; i < 20; i++) {
+//			if (isPrime(i)) {
+//				primeCount++;
+//			}
+//		}
+//		
+//		System.out.println(primeCount);
+
+		
+		// Example 7.3 Occurence of numbers
+		
+		
+//		Scanner input = new Scanner(System.in);
+//
+//		int[] array = new int[51];
+//		int number = 52;
+//
+//		while (number > 0) {
+//			number = input.nextInt();
+//			array[number] += 1;
+//		}
+//
+//
+//		for (int i = 1; i < array.length; i++) {
+//			if (array[i] == 1) 
+//				System.out.println(i + " occurs 1 time");
+//			else if (array[i] > 1) 
+//				System.out.println(i + " occurs " + array[i] +  " times");
+//		}
+
+		
+		
+		// Example 7.10
+		
+//		Scanner inputScanner = new Scanner(System.in);
+//		
+//		int length = inputScanner.nextInt();
+//		int[] array = new int[length];
+//		
+//		for (int i = 0; i < length; i++) {
+//			array[i] = inputScanner.nextInt();
+//		}
+//		
+//		if (isSorted(array)) {
+//			System.out.println("The list is already sorted");
+//		} else {
+//			System.out.println("The list is not sorted");
+//		}
+		
+		
+		
+		
 	}
 	
 	// Java Course problem 7.31 (Hard)		
@@ -835,20 +928,42 @@ public class Exercises {
 	
 	// Reverse Array Method
 	
-//	public static int[] reverseArray(int[] array) {
-//		
-//		int[] newArray = new int[array.length];
-//		
-//		for (int i = 0, j = array.length - 1; i < array.length; i++, j--) {
-//			newArray[i] = array[j];
-//		}
-//		System.out.println(Arrays.toString(newArray));
-//		return newArray;
-//	}
+	public static int[] reverseArray(int[] array) {
+		
+		int[] newArray = new int[array.length];
+		
+		for (int i = 0, j = array.length - 1; i < array.length; i++, j--) {
+			newArray[i] = array[j];
+		}
+		
+		return newArray;
+	}
 	
 	
 	
-	
+	public static boolean isPrime(int number) {
+		if (number == 0 || number == 1) {
+			return false;
+	}
+		
+		for (int i = 2; i < number; i++) {
+			if (number % i == 0) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	public static boolean isSorted(int[] list) {
+		
+		for (int i = 0; i < list.length - 1; i++) {
+			if (list[i] > list[i+1]) {
+				return false;
+			}
+		}
+		return true;
+	}
 	
 }
 
