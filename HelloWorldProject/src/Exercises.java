@@ -925,6 +925,10 @@ public class Exercises {
 		System.out.println("Play music");
 
 		
+		// Added one more function
+		String nameString = "Rashid";
+		System.out.println(nameString);
+		
 	}
 	
 	// Java Course problem 7.31 (Hard)		
