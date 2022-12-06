@@ -968,6 +968,29 @@ public class Exercises {
 //		}
 //		
 //		System.out.println(max);
+		
+//		
+//		Scanner inputScanner = new Scanner(System.in);
+//		int length = inputScanner.nextInt();
+//		int[] array = new int[length];
+//		int max = 0;
+//		
+//		for (int i = 0; i < array.length; i++) {
+//			array[i] = inputScanner.nextInt();
+//		}
+//		
+//		for (int i = 0; i < array.length-1; i+=2) {
+//			for (int j = 1; j < array.length; j+=2) {
+//				if (array[i] < array[j]) {
+//					if (Math.abs(array[i] - array[j]) > max) {
+//						max = Math.abs(array[i] - array[j]);
+//					}
+//				}
+//			}
+//		}
+//		
+//		System.out.println(Arrays.toString(array));
+//		System.out.println(max);
 	}
 	
 	// Java Course problem 7.31 (Hard)		
