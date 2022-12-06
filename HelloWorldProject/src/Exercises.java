@@ -920,7 +920,22 @@ public class Exercises {
 //		System.out.println(Arrays.toString(array));
 	
 		
-		
+//		Scanner inputScanner = new Scanner(System.in);
+//		int[] inputs = new int[8];
+//		int max = 0;
+//
+//		for (int i = 0; i < inputs.length; i++) {
+//			inputs[i] = inputScanner.nextInt();
+//		}
+//		
+//		for (int i = 0; i < inputs.length-2; i++) {
+//			int j = i+2;
+//			if (Math.abs(inputs[i] - inputs[j]) > max) {
+//				max = Math.abs(inputs[i] - inputs[j]);
+//			}
+//		}
+//		
+//		System.out.println(max * max);
 		
 	}
 	
