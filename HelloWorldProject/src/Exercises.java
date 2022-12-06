@@ -920,14 +920,7 @@ public class Exercises {
 //		System.out.println(Arrays.toString(array));
 	
 		
-		// Added new function
-		System.out.println("Start car");
-		System.out.println("Play music");
-
 		
-		// Added one more function
-		String nameString = "Rashid";
-		System.out.println(nameString);
 		
 	}
 	
