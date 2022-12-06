@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Stack;
+import java.util.concurrent.CountDownLatch;
 
 import javax.xml.transform.Source;
 
@@ -937,6 +939,35 @@ public class Exercises {
 //		
 //		System.out.println(max * max);
 		
+		
+//		Scanner inputScanner = new Scanner(System.in);
+//		int length = inputScanner.nextInt();
+//		inputScanner.nextLine();
+//		int max = 0;
+//		int count = 0;
+//		
+//		String[] inputStrings = new String[length];
+//		List<String>[] inputLists = new List[length];
+//		
+//		for (int i = 0; i < length; i++) {
+//			inputStrings[i] = inputScanner.nextLine();
+//			inputLists[i] = Arrays.asList(inputStrings[i].split(" "));
+//		}
+//		
+//		for (int i = 0; i < inputLists.length/2; i++) {
+//			
+//			for (int j = i; j < inputLists.length; j++) {
+//				if (inputLists[i].containsAll(inputLists[j]) && inputLists[j].containsAll(inputLists[i])) {
+//					count++;
+//				}
+//			}
+//			if (count > max) {
+//				max = count;
+//			}
+//			count = 0;
+//		}
+//		
+//		System.out.println(max);
 	}
 	
 	// Java Course problem 7.31 (Hard)		
